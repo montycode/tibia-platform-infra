@@ -38,3 +38,13 @@ Copy `.env.example` to `.env` and adjust values. The same variables are referenc
 docker compose down
 docker compose down -v   # also remove volumes
 ```
+
+## Publish to GitHub
+
+After `gh auth login`, from this directory:
+
+```powershell
+.\scripts\publish-repos.ps1
+```
+
+This creates and pushes all platform repositories under `montycode`.
