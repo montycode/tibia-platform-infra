@@ -3,7 +3,7 @@
 
 $ErrorActionPreference = "Stop"
 $Owner = "montycode"
-$ReposRoot = Split-Path -Parent $PSScriptRoot
+$ReposRoot = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
 
 $repos = @(
   "tibia-platform-shared",
